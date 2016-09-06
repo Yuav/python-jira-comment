@@ -26,7 +26,7 @@ __version__ = '0.1.0'
 
 from docopt import docopt
 from jira import JIRA
-from os import sys, getenv, path
+from os import sys, getenv
 import logging
 import requests
 requests.packages.urllib3.disable_warnings()
