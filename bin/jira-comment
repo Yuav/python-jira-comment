@@ -6,7 +6,7 @@ Add comment to JIRA
 Usage:
   jira-comment --bug-id=BUG_ID [options] ([-] | --comment_file=<comment_file>)
   jira-comment (-h | --help)
-  jira-comment (-v |--version)
+  jira-comment (-v | --version)
 
 Options:
   -f --comment-file=<comment_file>  File with comment text [default: /dev/stdin]
