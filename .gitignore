@@ -1,7 +1,10 @@
+.coverage
 .eggs/
 .idea/
+.tox/
 build/
 dist/
 *.egg-info/
 venv/
 *.pyc
+nosetests.xml
