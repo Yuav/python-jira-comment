@@ -14,6 +14,8 @@ setup(name='jira-comment',
           'PyCrypto',
       ],
       tests_require=[
+          'coverage',
+          'nosexcover',
           'nose',
       ],
       scripts=['bin/jira-comment'],
