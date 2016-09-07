@@ -8,7 +8,6 @@ setup(name='jira-comment',
       author='Jon Skarpeteig',
       author_email='jskarpet@cisco.com',
       url='https://gitscm.cisco.com/projects/CTG/repos/python-jira-comment/browse',
-      packages=['app'],
       install_requires=[
           'docopt',
           'jira',
@@ -16,9 +15,6 @@ setup(name='jira-comment',
       ],
       tests_require=[
           'nose',
-      ],
-      setup_requires=[
-          'package_version'
       ],
       scripts=['bin/jira-comment'],
       )
