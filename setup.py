@@ -7,7 +7,7 @@ setup(name='jira-comment',
       description='Command line tool to post comment to Jira',
       author='Jon Skarpeteig',
       author_email='jskarpet@cisco.com',
-      url='https://gitscm.cisco.com/projects/CTG/repos/python-jira-comment/browse',
+      url='https://github.com/Yuav/python-jira-comment',
       install_requires=[
           'docopt',
           'jira',
