@@ -1,7 +1,16 @@
 sudo: false
 language: python
 python:
-    - "2.7"
-    - "3.4"
+- '2.7'
+- '3.4'
 install: pip install tox-travis
 script: tox
+deploy:
+  provider: pypi
+  user: yuav
+  password:
+    secure: VRc6xIo3BNV53dJVw2JYwVOT9DWYS+nq3O3fT4877CQtKYewp2eRQAIw5tAg5qOfS9sFk7VIPyI2aRLyS+UDKp18bQsHS8FhyG14z5XCSEzKlvPLX2qhyodDz90kDrt/Q5uVvI5WGOf8UCP4Zsg9PraExl/A2bUY3S05y/PNHuO3VrXBNQhTHdD94I8WyDI8P3TyRdHNS1hxGIpl9E/WYArcI8vPBwln+e7PudWkMq9Kbkr8aFucsWH78gAaD+oMzFo008YR0VV/E11Vq8dX0rwP2GO9RhR6TGpyvCtgA84GTqIvboZQtTxIQOhtdpr5HMxFRclVYCeCmPVJ2PBdSCaE0bm4CDo+PXiZB3JQEKIwySNV7LqIFOQE5ub//h5/qfoPmKvjCrJkylabR6kuUFu9eepKC5fTHf4ZwJp0hpWf/2PMEiyquiX7E5vVq659oy9DSh0EZ0w4mYdbzok44XNKqrlNuyY9No1L/rl5MXEfJVDUj2IPuUU6PlNesagaZj/8sfo57ycBa4LS5dnTIgpzbot4UsI43PG2423iVZJj5Uwu7QExJn4aHxWjrCfiLCCrjIbdfBBIBIRYEXa4NvNs6fBuyOb3+LYHeFVxBjWeAiAJcbA2u2onl3fbZ17+D00tOVyxItGtVQ//BHdnkQLYkrrYj588LIe+Lj5DXgQ=
+  on:
+    tags: true
+    distributions: sdist bdist_wheel
+    repo: Yuav/python-jira-comment
