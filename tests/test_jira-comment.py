@@ -9,6 +9,6 @@ jira_comment = "%s/bin/jira-comment" % root
 
 class TestCLIParser(unittest.TestCase):
     def test_does_compile(self):
-        # Wrap command in coverage command to get coverage report
+        # Wrap bin script in coverage command to get coverage report
         output = subprocess.check_output("coverage run %s -h" % jira_comment, shell=True)
         self.assertIsNotNone(output)
