@@ -22,7 +22,7 @@ Examples:
   jira-comment --bug-id=JIRA-271 --comment-file=comment.txt
 """
 
-__version__ = '0.1.0'
+__version__ = '1.0.0'
 
 from docopt import docopt
 from jira import JIRA

@@ -3,7 +3,7 @@ from setuptools import setup
 
 
 setup(name='jira-comment',
-      version='0.1.0',
+      version='1.0.0',
       description='Command line tool to post comment to Jira',
       author='Jon Skarpeteig',
       author_email='jskarpet@cisco.com',
