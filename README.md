@@ -1,4 +1,7 @@
 Add comment to JIRA
+===================
+
+Tiny wrapper around the jira library to add comment to an existing bug
 
 Usage:
   jira-comment --bug-id=BUG_ID [options] ([-] | --comment_file=<comment_file>)
@@ -17,3 +20,9 @@ Options:
 Examples:
   echo "my comment" | jira-comment --bug-id=JIRA-271
   jira-comment --bug-id=JIRA-271 --comment-file=comment.txt
+  
+  
+Installing
+==========
+
+    pip install jira-comment
